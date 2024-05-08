@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ff444b5d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODO LIST</h1>
+      <p>Jayavel's</p>
+      <div class="todo-container">
+        <div class="input">
+
+          <!--This line represents to give a input of the data-->
+          
+          <input type="text" placeholder="Enter a task"  id="enter_task"/>
+
+          <!--This line rerpresents add task button-->
+          <button onclick="addtask()" title="Add task">Add task</button>
+
+        </div>
+        <div class="list-container">
+          <ul id="todo-list">
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+ 
+</html>

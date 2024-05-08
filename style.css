@@ -1,0 +1,156 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-color: purple;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh; /* changed from max-height to height */
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Container Styles */
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto; /* added margin: 0 auto for horizontal centering */
+}
+.container h1{
+  text-align: center;
+  color: white;
+}
+.container p{
+  color: white;
+}
+
+/* Todo Container Styles */
+
+.todo-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styles */
+
+.input {
+  display: flex;
+  flex-wrap: wrap; /* added flex-wrap for responsiveness */
+  margin-bottom: 20px;
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #004b9cc6;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.55s;
+  font-weight: bold;
+}
+.input button:hover{
+  background-color: aquamarine;
+  color: black;
+}
+
+/* List Container Styles */
+
+.list-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+/* Webkit Scrollbar Styles */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-container ul li {
+  padding: 10px;
+  background-color: rgba(0, 123, 255, 0.2);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Icon Styles */
+
+.fa-trash {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (max-width: 480px) */
+
+@media (max-width: 480px) {
+ .container {
+    padding: 10px;
+  }
+ .todo-container {
+    padding: 15px;
+  }
+ .input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+ .input button {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+ .list-container {
+    max-height: 300px;
+  }
+}
+
+/* Tablet
